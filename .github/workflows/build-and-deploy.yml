@@ -15,7 +15,7 @@ jobs:
 
       - uses: actions/cache@v3
         with:
-          path: Library
+          path: Webgl
           key: webgl-${{ hashFiles('**/Packages/manifest.json') }}
           restore-keys: |
             webgl-
@@ -64,7 +64,7 @@ jobs:
 
       - uses: actions/cache@v3
         with:
-          path: Library
+          path: Windows
           key: windows-${{ hashFiles('**/Packages/manifest.json') }}
           restore-keys: |
             windows-
